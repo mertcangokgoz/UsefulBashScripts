@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # PALI : The Perfect Automatic Lamp Installer
 # Version : 2.3 (stable for use in Production)

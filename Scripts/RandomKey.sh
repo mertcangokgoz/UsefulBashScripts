@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 generateKey () {
   P1=`cat /dev/urandom | tr -cd abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789 | head -c 3`

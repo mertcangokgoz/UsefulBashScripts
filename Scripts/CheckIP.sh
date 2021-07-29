@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 MY_IP_ADDR=$(curl -s http://myip.enix.org/REMOTE_ADDR)
 [ "$MY_IP_ADDR" ] || {

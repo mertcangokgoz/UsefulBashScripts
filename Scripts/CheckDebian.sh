@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ "$os_type" = "Debian" ]; then
   os_ver="$(sed 's/\..*//' /etc/debian_version 2>/dev/null)"

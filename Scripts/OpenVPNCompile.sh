@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 latest=2.3.14
 aptitude update && aptitude full-upgrade && aptitude install openvpn ca-certificates build-essential liblzo2-dev libssl-dev libpam0g-dev -y

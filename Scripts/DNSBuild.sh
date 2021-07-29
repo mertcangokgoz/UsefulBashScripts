@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Welcome To Server DNS Creator"
 echo "Enter the following configuration parameters of the DNS"

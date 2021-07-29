@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 for run in 1 2 3 ;do
 for thread in 1 4 8 16 32 ;do
