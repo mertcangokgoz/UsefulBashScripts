@@ -10,7 +10,7 @@ yum_installs() {
 }
 
 install_python() {
-  cd $TMP_INSTALL_DIR;
+  cd "$TMP_INSTALL_DIR";
   # Install Python 2.7.6
   curl -L -o Python-2.7.6.tgz https://www.python.org/ftp/python/2.7.6/Python-2.7.6.tgz &&
   tar xzf Python-2.7.6.tgz &&
@@ -161,14 +161,14 @@ install_cryptography() {
   # Install the patched versions of cryptography, pyopenssl and pycrypto
   # This is needed to avoid this bug: https://groups.google.com/forum/#!topic/ikarus-users/_R0QHqwyYz8
   export ac_cv_func_malloc_0_nonnull=yes
-  sudo -E `which pip` install PyCrypto &&
-  sudo `which pip` install cryptography &&
-  sudo `which pip` install https://github.com/pyca/pyopenssl/archive/master.zip
+  sudo -E "$(which pip)" install PyCrypto &&
+  sudo "$(which pip)" install cryptography &&
+  sudo "$(which pip)" install https://github.com/pyca/pyopenssl/archive/master.zip
 }
 
 install_pluggable_transports() {
   # Install pluggable transport related stuff
-  sudo `which pip` install obfsproxy
+  sudo "$(which pip)" install obfsproxy
   curl -L -o 0.2.9.zip https://github.com/kpdyer/fteproxy/archive/0.2.9.zip
   unzip 0.2.9.zip
   cd fteproxy-0.2.9
@@ -179,7 +179,7 @@ install_pluggable_transports() {
 
 install_ooniprobe() {
   # Install ooniprobe and obfsproxy
-  sudo `which pip` install https://github.com/TheTorProject/ooni-probe/archive/master.zip &&
+  sudo "$(which pip)" install https://github.com/TheTorProject/ooni-probe/archive/master.zip &&
   /usr/local/bin/ooniprobe --version
 }
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 sudo -u ${USERNAME} normal_command_1
 top -bn5 >> top_logs.txt

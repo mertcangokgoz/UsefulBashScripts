@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "A very simple utility to update a firewall with a dynamic IP address."
 echo "Espcially useful when using a cron job."

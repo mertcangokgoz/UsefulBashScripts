@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 #
 # Credit goes to this article for the instructions in this shell script:
 #   http://blog.zwiegnet.com/linux-server/disable-selinux-centos-7/

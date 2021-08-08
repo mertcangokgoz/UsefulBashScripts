@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ok() {
     echo -e '\e[32m'$1'\e[m';

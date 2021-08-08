@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ -n "$(command -v apt-get | wc -l)" != "1" ]
 then

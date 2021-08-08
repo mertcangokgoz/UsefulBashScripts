@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 IPPFX=$1
 for i in `seq 1 255` ; do LIST="$LIST ${IPPFX}.$i" ; done

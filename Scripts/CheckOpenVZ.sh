@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ -f /proc/user_beancounters ]; then
   echo "Error: This script does not support OpenVZ VPS." >&2

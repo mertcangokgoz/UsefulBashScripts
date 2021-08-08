@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 phymem="$(free | awk '/^Mem:/{print $2}')"
 [ -z "$phymem" ] && phymem=0

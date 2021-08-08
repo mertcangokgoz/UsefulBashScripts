@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Checking bash version."
 version=$(bash --version | grep 'GNU bash' | sed 's/.*version \([0-9]*\)\..*/\1/')

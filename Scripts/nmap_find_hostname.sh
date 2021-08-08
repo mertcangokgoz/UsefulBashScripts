@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #### Script finds UP hosts and its HOSTNAME
 #### Usage:
 #### sh nmap_find_hostname.sh IP/MASK

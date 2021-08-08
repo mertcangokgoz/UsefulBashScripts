@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 while [ $# -gt 0 ]; do
     case "$1" in
@@ -6,20 +6,20 @@ while [ $# -gt 0 ]; do
             echo -e "${yellow}OpenVPN automatic server and client certificate(s) setup script, v0.01 :: Author: niemal"
             echo -e "      ${white}For a client certificate/package only refer to the create_client.sh script.\n"
             echo -e "Parameters:"
-            echo -e "  $lightred--clients $white[integer]$nocolour            - Specifies the amount of client certificates to be automatically created. Default is 1."
-            echo -e "  $lightred--servername $white[string(text)]$nocolour    - Defines the server's name. Default is 'server'."
-            echo -e "  $lightred--sslconf $white[absolute(path)]$nocolour     - Path for the openssl.cnf creation. It is created by default at '/etc/openvpn/openssl.cnf'."
-            echo -e "  $lightred--certs $white[absolute(path)]$nocolour       - Path to the certificates directory. If it doesn't exist, it gets created. Default is '/etc/openvpn/certs'."
-            echo -e "  $lightred--certmodulus $white[integer(bit)]$nocolour   - The RSA modulus bit setting. Default is 2048."
-            echo -e "  $lightred--expires $white[integer(days)]$nocolour      - The certificate expiration in days. Default is 31337."
+            echo -e "  $lightred--clients ${white}[integer]$nocolour            - Specifies the amount of client certificates to be automatically created. Default is 1."
+            echo -e "  $lightred--servername ${white}[string(text)]$nocolour    - Defines the server's name. Default is 'server'."
+            echo -e "  $lightred--sslconf ${white}[absolute(path)]$nocolour     - Path for the openssl.cnf creation. It is created by default at '/etc/openvpn/openssl.cnf'."
+            echo -e "  $lightred--certs ${white}[absolute(path)]$nocolour       - Path to the certificates directory. If it doesn't exist, it gets created. Default is '/etc/openvpn/certs'."
+            echo -e "  $lightred--certmodulus ${white}[integer(bit)]$nocolour   - The RSA modulus bit setting. Default is 2048."
+            echo -e "  $lightred--expires ${white}[integer(days)]$nocolour      - The certificate expiration in days. Default is 31337."
             echo -e "  $lightred--duplicate-cn$nocolour                 - Allow duplicate certificates in the network. Default is to not."
-            echo -e "  $lightred--cipher $white[string(cipher)]$nocolour      - The server's encryption cipher. Default is AES-256-CBC."
-            echo -e "  $lightred--port $white[integer(port)]$nocolour         - The server's port. Default is 1194."
-            echo -e "  $lightred--vpnsubnet $white[string(subnet)]$nocolour   - The network's subnet, CIDR 24. Default is '10.8.0.0'."
-            echo -e "  $lightred--dns1 $white[string(ip)]$nocolour            - Defines DNS #1 for the server.conf. Default is OpenDNS, 208.67.222.222."
-            echo -e "  $lightred--dns2 $white[string(ip)]$nocolour            - Defines DNS #2 for server.conf. Default is OpenDNS, 208.67.220.220."
+            echo -e "  $lightred--cipher ${white}[string(cipher)]$nocolour      - The server's encryption cipher. Default is AES-256-CBC."
+            echo -e "  $lightred--port ${white}[integer(port)]$nocolour         - The server's port. Default is 1194."
+            echo -e "  $lightred--vpnsubnet ${white}[string(subnet)]$nocolour   - The network's subnet, CIDR 24. Default is '10.8.0.0'."
+            echo -e "  $lightred--dns1 ${white}[string(ip)]$nocolour            - Defines DNS #1 for the server.conf. Default is OpenDNS, 208.67.222.222."
+            echo -e "  $lightred--dns2 ${white}[string(ip)]$nocolour            - Defines DNS #2 for server.conf. Default is OpenDNS, 208.67.220.220."
             echo -e "  $lightred--exitnode$nocolour                     - Configures iptables so the client can access the internet through the VPN. Requires --iface."
-            echo -e "  $lightred--iface $white[string(interface)]$nocolour    - Declares the interface for --exitnode. Default is eth0."
+            echo -e "  $lightred--iface ${white}[string(interface)]$nocolour    - Declares the interface for --exitnode. Default is eth0."
             exit 0;;
         -c | --clients)
             shift

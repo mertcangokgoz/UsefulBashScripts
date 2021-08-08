@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 clear
 
@@ -94,7 +94,7 @@ rm /etc/nginx/sites-enabled/default
 service nginx restart
 
 echo "install PM2"
-echo "#!/bin/bash" >> /home/ghost/start.sh
+echo "#!/usr/bin/env bash" >> /home/ghost/start.sh
 echo "export NODE_ENV=production" >> /home/ghost/start.sh
 echo "cd /var/www/ghost/" >> /home/ghost/start.sh
 echo "npm start --production" >> /home/ghost/start.sh
