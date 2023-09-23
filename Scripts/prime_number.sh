@@ -17,4 +17,4 @@ do
   fi
 done
 
-echo $number " is a pime number"
+echo $number " is a prime number"
